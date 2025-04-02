@@ -109,11 +109,14 @@ int main (){
     printf("***Vamos comparar as duas cartas pelo atributo POPULAÇÃO***\n");
     // Comparando o atributo das duas cartas. O atributo escolhido foi POPULAÇÃO.
     if (populacao1>populacao2){
+        printf("Carta 1 (%s): %d habitantes\n", cidade1,populacao1);
+        printf("Carta 2 (%s): %d habitantes\n", cidade2,populacao2);
         printf("Carta 1 venceu!\n");
-        printf("População Carta 1: %d habitantes > População Carta 2: %d habitantes \n", populacao1,populacao2);
+        
         }else{
-        printf("Carta 2 venceu!\n");
-        printf("População Carta 2: %d habitantes > População Carta 1: %d habitantes \n", populacao2,populacao1);
+            printf("Carta 2 (%s): %d habitantes\n", cidade2,populacao2);
+            printf("Carta 1 (%s): %d habitantes\n", cidade1,populacao1);
+            printf("Carta 2 venceu!\n");
         }
     return 0;
     
